@@ -18,6 +18,7 @@ public class Ex14_Scanner {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		//git 확인용
 		
 	}
 
