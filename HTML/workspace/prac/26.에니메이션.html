@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes change {
+            0%{background-color: brown; transform: translate(0px, 0px);}
+            50%{background-color: #268C2E; transform: translate(20px, 20px);}
+            100%{background-color: #767ABE; transform: translate(0px, 0px);}
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            animation-name: change;
+            /* transition-property: background-color; */
+            /* transform: translate(20px, 20px); */
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animation..</div>
+</body>
+</html>

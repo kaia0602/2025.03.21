@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fixed 레이아웃</title>
+    <style>
+        .bgRed {
+            width: 1280px;
+            height: 500px;
+            background-color: red;
+        }
+        .header {
+            /* border: 1px solid white; */
+            text-align: left;
+            padding: 5px 1px;
+            position: sticky;
+        }
+        ul {
+            font-size: 20px;
+        }
+        ul, li {
+            list-style: none;
+            display: inline;
+            color: #444444;
+            word-spacing: 40px;
+            padding: 5px 1px;
+        }
+
+        
+        .title {
+            font-size: 30px;
+            font-weight: 900;
+            
+        }
+
+        .box1 {
+            background-color: darkseagreen;
+            height: 150px;
+            z-index: 1;
+        }
+        .box2 {
+            background-color: aquamarine;
+            height: 200px;
+            z-index: 2;
+        }
+        .box3 {
+            background-color: green;
+            height: 350px;
+            position: absolute;
+            left: 200px;
+            z-index: 3;
+        }
+        .box4 {
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bgRed">
+        <div class="header">
+            <ul>
+                <li class="title">logotype</li>
+                <li>m1</li>
+                <li>m2</li>
+                <li>m3</li>
+                <li>m4</li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <p>s1</p>
+                <p>s2</p>
+                <p>s3</p>
+                <p>s4</p>
+            </div>
+            <div class="box2">
+
+            </div>
+            <div class="box3">
+                <p>내용</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+                <p>헤더를 상단에 고정</p>
+            </div>
+            <div class="box4"></div>
+        </div>
+    </div>
+</body>
+</html>

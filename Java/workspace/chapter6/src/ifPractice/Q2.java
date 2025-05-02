@@ -1,0 +1,20 @@
+package ifPractice;
+
+import java.util.Scanner;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		2. 한 층의 높이가 5m일 때, 건물이 몇 층인지 입력받아 높이를 출력하라. [난이도 하] 
+//				몇 층인지 입력하세요>>155 
+//				775m 입니다.
+		Scanner sc = new Scanner(System.in);
+		System.out.print("몇 층인지 입력하세요 >>");
+		int floor = sc.nextInt();
+		int height = floor * 5;
+		System.out.println(height + "m 입니다." );
+	}
+
+}

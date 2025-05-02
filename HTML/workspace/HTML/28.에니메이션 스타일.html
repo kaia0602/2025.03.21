@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에니메이션 스타일</title>
+    <style>
+        @keyframes bgchange{
+            0%{background-color: red;}
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+            /* 시간의 경과를 %로 설정, 0~100%까지 자유롭게 설정가능 */
+
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-name: bgchange;
+            animation-duration: 10s;
+            /* animation-duration: 키프레임에 걸리는 시간; */
+            animation-delay: 2s;
+            /* animation-delay: 에니메이션 실행전 대기시간; */
+            animation-fill-mode: forwards;
+            /* animation-fill-mode: 에니메이션이 종료된 후의 상태; */
+            /* none: 원상태로 돌아감
+                foward: 마지막 상태 그대로 
+                backwards: 0% > 100%로 실행 후 원상태로
+                both: 0% > 100%로 실행 */
+            animation-iteration-count: infinite;
+            /* animation-iteration-count: 숫자;,
+            infinite로 설정할 경우 무한 반복 */
+            animation-direction: alternate;
+            /* animation-direction: 진행 방향을 설정함; */
+            /* normal: 0 > 100 으로 실행 */
+            /* reverse: 100 > 0으로 실행 */
+            /* alternate: 0 > 100 > 0으로 반복 */
+            /* alternate-reverse: 100 >0 > 100으로 반복 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

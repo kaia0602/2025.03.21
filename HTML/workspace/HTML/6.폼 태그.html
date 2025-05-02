@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <!-- form 태그: 텍스트박스나 체크박스등을 감싸는 태그로 데이터를
+     보내는 형식이나 위치를 설정하는 태그 -->
+    <form action="./1. 텍스트 관련태그.html" method="get">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="전송">
+        <!-- GET 방식: 데이터를 주소창에 설정하여 보내는 방식 -->
+        <!-- 검색, 이동 -->
+    </form>
+    <form action="#" method="post">
+    <!-- POST 방식: 주소창에 데이터가 보이지 않도록 데이터를 전달하는 방식 (보안성)(간략화)-->
+        <input type="text" name="id">
+        <input type="password" name="pw">
+        <input type="submit" value="전송">
+        <!-- input 태그: 입력을 할 수있는 공간을 만듦 -->
+        <!-- type 속성: 여러가지 입력 형식을 설정, 종류 많음 -->
+        <!-- name 속성: 파라미터의 이름을 설정, 미설정시 데이터가 보내지지 않음 -->
+        <!-- type="submit": form 태그의 action을 실행하는 버튼 설정 -->
+    </form>
+    <h1>레드향 주문하기</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>회원정보</legend>
+            <label>아이디<input type="text" name="id"></label>
+            <label for="pw">비밀번호</label><input id="pw" type="password" name="id">
+            <!-- label의 for 속성: input 태기의 id 속성값을 설정하여
+             label과 input을 연결 -->
+        </fieldset>
+        <fieldset>
+            <legend>상품 선택</legend>
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+        </fieldset>
+    </form>
+</body>
+</html>

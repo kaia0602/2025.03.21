@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position style</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            /* display: inline-block; */
+        }
+
+        .red-box {
+            background-color: red;
+        }
+
+        .green-box {
+            background-color: green;
+        }
+
+        .relative {
+            position: relative;
+            /* relative: 자기 자신의 원래 위치에서 좌표이동 */
+            /* 좌표 속성: top: 아래로 ~만큼이동 
+                        right:오른쪽에서 왼쪽으로 ~만큼 이동
+                        bottom: 밑에서 위로 ~만큼 이동
+                        left: 왼쪽에서 오른쪽으로 ~만큼 이동 */
+            top: 100px;
+            left: 100px;
+        }
+
+        .blue-box {
+            background-color: blue;
+        }
+
+        .black-box {
+            background-color: black;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 100px;
+            /* left, right만 사용시 현재 위치에서 좌우로 좌표 이동 */
+            /* 원래 위치에 없는 것으로 처리되어 아래의 내용이 위로 올라온다 */
+            top: 100px;
+            /* top, bottom을 사용하면 웹 브라우저의 0,0 위치를 기준으로 좌표를 이동 */
+        }
+
+        .fixed {
+            position: fixed;
+            left: 100px;
+            top: 100px;
+            /* 스크롤에 관계없이 모니터를 기준으로 위치를 선정 */
+            /* 좌표이동 방식은 absolute와 같음 */
+            /* z-index: z축을 설정, 숫자값 */
+            z-index: 0;
+        }
+
+        .sticky {
+            position: sticky;
+            left: 200px;
+            top: 0px;
+            /* 좌표이동 방식은 relative와 같음 */
+            /* 스크롤 중에 일정 지점이 되면 fixed처럼 작동한다 */
+            /* 옛날 브라우저에서는 실행되지 않음 */
+        }
+
+        .z1 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .z2 {
+            position: absolute;
+            left: 10px;
+            top: 700px;
+            z-index: 2;
+        }
+
+        .z3 {
+            position: relative;
+            z-index: 3;
+            left: 10px;
+            bottom: 10px;
+        }
+        /* z-index: z축을 설정, 큰값이 앞으로, 작은값이 뒤로 설정 */
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box red-box sticky">sticky</div>
+
+    relative 확인하기(상대적인 위치)
+    <div class="box red-box"></div>
+    <div class="box green-box relative"></div>
+    <div class="box blue-box"></div>
+
+    absolute 확인하기(절대적인 위치)
+    <div class="box red-box"></div>
+    <div class="box green-box absolute"></div>
+    <div class="box blue-box"></div>
+
+    <div class="box black-box fixed"></div>
+
+    <div class="box red-box sticky">sticky</div>
+
+    z-index 확인하기    
+    <div class="box red-box z1">z1</div>
+    <div class="box green-box z2">z2</div>
+    <div class="box blue-box z3">z3</div>
+
+</body>
+
+</html>

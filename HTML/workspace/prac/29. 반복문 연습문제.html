@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29. 반복문 연습문제</title>
+</head>
+<body>
+    <script>
+        //  0~100까지 5의 배수의 합을 출력하세요.
+        sum = 0;
+        for(i = 0; i <=100; i++){
+            if(i % 5 ===0){
+                sum += i;
+            }
+        }
+        console.log(sum);
+
+        // 구구단 중 5단을 출력하세요.
+        let gugu = 5;
+        for (let dan = 1; dan <= 9 ; dan++){
+            console.log(`${gugu} * ${dan} : ${gugu * dan}` )
+        }
+
+        // 2~9단을 모두 출력하세요.
+        for(let gugu2 = 2; gugu2 <= 9; gugu2++){
+            for(let dan2 = 1; dan2 <=9; dan2++){
+                console.log(`${gugu2} * ${dan2} : ${gugu2 * dan2}`)
+            }
+        }
+        // 삼각형 모양을 출력하세요.
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+
+        for(let result = 0; result < 5;  result++) {
+            let star = "";
+            for(let j = 0; j <= result ; j++){
+                star += "*"
+            }
+            console.log(star);
+        }
+
+        // 역삼각형 모양을 출력하세요
+        // *****
+        // ****
+        // ***
+        // **
+        // *   
+
+        for(let result2 = 5; result2 >= 1;  result2--) {
+            let star2 = "";
+            for(let j2 = 1; j2 <= result2 ; j2++){
+                star2 += "*"
+            }
+            console.log(star2);
+        }
+        
+        // A배열의 평균을 출력하세요.
+        let A = [70,60,55,75,95,90,80,80,85,100];
+        result = 0;
+        for(let i = 0; i<A.length; i ++){
+            result += A[i]
+        }
+        console.log(`배열의 평균값: ${result/A.length}`)
+        // let sum2 = 0;
+        // for(let i = 0; i <= A.length; i++){
+        //     sum2 += A[i];
+        // }
+        // let aver =  sum2 / A.length;
+        // console.log(aver);
+       
+        //1900년도부터 2025년까지의 윤년을 출력해보자
+        // 윤년의 조건
+        // 400으로 나누어 나머지가 0이면 윤년입니다.
+        // 100으로 나누어 나머지가 0이면 윤년이 아닙니다.
+        // 4로 나누어 나머지가 0이면 윤년입니다.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input tag</title>
+</head>
+<body>
+    <form action="#">
+        <input type="search" name="search">
+        <!-- x버튼이 생겨서 내용을 초기화 -->
+        <input type="url" name="url">
+        <!-- URL 형식이 아닐경우 ERROR -->
+        <input type="email" name="email">
+        <!-- 이메일 형식이 아닐경우 ERROR -->
+        <input type="tel" name="tel">
+        <!-- 형식의 제한이 없음 -->
+        <input type="submit" value="전송">
+    </form>
+    <form action="#">
+        <!-- value 속성: 체크가 되었을때 value의 값을 전송 -->
+        <label>선물용 3kg<input type="checkbox" name="check1" value="A1"></label>
+        <label>선물용 5kg<input type="checkbox" name="check2" value="B3"></label>
+        <label>가정용 3kg<input type="checkbox" name="check3" value="C5"></label>
+        <label>가정용 5kg<input type="checkbox" name="check4"></label>
+        <input type="submit" value="전송">
+        <!-- checkbox의 경우 label 태그를 눌러 체크가 가능 -->
+    </form>
+    <form action="">
+        <!-- radio 태그: 여러개의 내용중 한개만 선택가능 -->
+         <!-- 같은 name 속성을 사용하는 것으로 radio 태그를 하나로 묶음 -->
+        <label>선물 포장<input type="radio" name="gift" value="yes"></label>
+        <label>일반 포장<input type="radio" name="gift" value="no"></label>
+        <input type="submit" value="전송">
+    </form>
+    <form action="">
+        <input type="number" name="num" min="2" max="10" step="2">
+        <input type="range" name="ran" min="2" max="10" step="2">
+        <input type="submit" value="ok">
+    </form>
+    <form action="">
+        <input type="date" name="date">
+        <input type="month" name="month">
+        <input type="week" name="week" >
+        <input type="image" src="../images/login.png" alt="login" width="50">
+        <input type="button" value="button" onclick="window.open('index.html')">
+        <!-- onclick 속성: 자바스크립트를 실행하기 위한 속성 -->
+        <!-- window.open('파일이름'): 파일을 새창에 열어주는 자바스크립트 -->
+        <button type="button" onclick="window.open('index.html')">button_tag</button>
+        <!-- button 태그는 type를 설정하지 않으면 submit으로 설정 -->
+       <!-- type: submit, reset, button -->
+    </form>
+    <form action="">
+        <input type="time" name="time">
+        <input type="datetime-local" name="datetime-local">
+        <input type="submit" value="전송">
+    </form>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!-- enctype="multipart/form-data: 파일을 전송하려면 사용해야함 -->
+        <input type="file" name="file" multiple>
+        <!-- multiple: 다수의 파일을 선택 -->
+        <button>send</button>
+    </form>
+    <form action="#" method="get">
+        <input type="hidden" name="hidden" value="hiddendata">
+        <!-- hidden: 화면에 보여지지않고 데이터만 저장 -->
+         <!-- submit 실행 시 hidden 속 데이터도 전송 -->
+        <input type="text" name="id">
+        <input type="submit" value="send">
+    </form>
+
+</body>
+</html>

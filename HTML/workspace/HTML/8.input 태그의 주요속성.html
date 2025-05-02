@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input 태그의 주요 속성</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul id="shopping">
+                <li>
+                    <label for="prod">주문 상품</label>
+                    <input type="text" id="prod" name="prod" value="상품용 3kg" readonly>
+                    <!-- readonly: 변경 불가, 읽기만 가능 -->
+                    <!-- 이름, ID등 변경 금지 데이터에 설정 -->
+                    <!-- submit 실행 시 서버로 데이터가 전송됨 -->
+                </li>
+                <li>
+                    <label for="user_name">이름</label>
+                    <input type="text" id="user_name" name="user_name" autofocus required>
+                    <!-- autofocus 속성: 자동으로 클릭상태로 설정 -->
+                    <!-- required 속성: 내용을 적지 않으면 미실행, ERROR 문구 출력 -->
+                </li>
+                <li>
+                    <label for="addr">배송 주소</label>
+                    <input type="text" size="20" maxlength="10" id="addr" name="addr" placeholder="ex: busan jingu">
+                    <!-- size 속성: 텍스트의 가로크기 설정 -->
+                    <!-- maxlength 속성: 입력 가능한 최대 수 -->
+                   
+                <li>
+                    <label for="phone">전화번호</label>
+                    <input type="tel"  id="phone" name="phone" placeholder="- (하이픈) 제거" disabled>
+                    <!-- disabled 속성: submit 실행 시 데이터 미전달 -->
+                </li>
+                
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="order">
+            <input type="reset" value="cancel">
+        </div>
+    </form>
+</body>
+</html>

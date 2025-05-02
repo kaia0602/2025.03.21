@@ -1,0 +1,33 @@
+package chapter22;
+
+interface Unit7 {
+	void move(String s);
+}
+
+public class Ex07_Lamda {
+
+	public static void main(String[] args) {
+		
+		// 람다식의 경우 인터페이스에 있는 하나의 메서드를 구현 할 수 있음
+		// 인터페이스 안에 미구현 메서드가 2개이상 있는 경우 람다식을 사용할 수 없다
+		// 람다식을 이용하면 여러가지 메서드 작성 문법을 생략가능
+					// 매개변수    -> (람다식 화살표)
+		Unit7 unit = (String s) -> {
+			// 실행할 코드
+			System.out.println(s);
+		};
+		unit.move("Lamda식으로 실행");
+		
+		System.out.println("----------------");
+		
+		Unit7 unit2 = new Unit7() {
+			@Override
+			public void move(String s) {
+				System.out.println(s);
+			}
+		};
+		unit2.move("익명 내부 클래스로 실행");
+		
+	}
+
+}

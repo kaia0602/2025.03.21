@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background 관련 스타일</title>
+    <style>
+        div {
+            width: 1280px;
+            height: 800px;
+            /* image가 width, height보다 작을 경우 반복해서 채우게됨 */
+            /* background-image: url(../images/coffee.jpg); */
+            /* background-repeat: no-repeat; */
+            /* image 반복설정 */
+            /* no-repeat: 반복하지 않음 */
+            /* background-color: darkolivegreen; */
+            /* background-repeat: repeat-x; */
+            /* repeat-x: 가로 축만 반복 */
+            /* background-repeat: repeat-y; */
+            /* repeat-y: 세로 축만 반복 */
+            /* background-repeat: space; */
+            /* repeat: 가로, 세로 반복(기본값) */
+            /* round: 이미지가 요소에 딱 맞도록 크기를 자동조절 */
+            /* space: 이미지가 짤리지 않도록 반복 */
+            /* background-size: contain; */
+            /* background-size: 이미지가 배경보다 작을 경우 사용되는 속성 */
+            /* outo: 이미지 크기를 유지. 기본값 */
+            /* cover: 이미지의 가로, 세로 비율을 유지하면서 이미지 크기를 키워 배경을 다 채움 */
+            /* contain: 이미지의 가로세로 비율을 유지하면서 배경안에 들어가도록 크기를 확대, 축소함 */
+            /* 너비 높이 직접 설정하기 */
+            /* background-size: 80px 60px; */
+            /* background-position: 이미지를 특정위치에 출력하는 속성 */
+            /* background-position: 240px 10px; */
+
+            /* background-attachment: fixed; */
+            /* background-attachment: 스크롤 할때의 이미지 작동방식 설정 */
+            /* local: 이미지와 웹 브라우저 모두 스크롤 */
+            /* scroll: 이미지는 고정되지만 웹 브라우저는 스크롤 */
+            /* fixed: 이미지와 웹 브라우저 모두 고정 */
+            /* background-position: center; */
+            /* background-image: url(../images/bg.jpg); */
+            /* background 설정 */
+            /* background: color, image, repeat, position, attachment; */
+            background: red url('../images/coffee.jpg') no-repeat center/100% 100% fixed;
+        }
+        p {
+            height: 500px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>background-attachment</p>
+    <div></div>
+    <p>background-attachment</p>
+</body>
+</html>

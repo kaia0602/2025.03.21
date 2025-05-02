@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            /* padding: 0; */
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: red;
+            height: 50px;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .header h1,
+        .header ul ,
+        .header li {
+            display: inline-block;
+            word-spacing: 40px;
+            color: #444444;
+        }
+        a {
+            text-decoration: none;
+            color: #444444;
+        }
+        .side {
+            display: inline-block;
+            width: 20%;
+            background-color: #90EE90;
+            list-style-type: none;
+            position: absolute;
+            left: 0; top: 50px;
+            height: 120px;
+        }
+        .side li {
+            list-style-type: none;
+        }
+        .container {
+            width: 80%;
+            height: 400px;
+            position: absolute;
+            left: 20%; top: 50px;
+            display: inline-block;
+            background-color: #228B22;
+        }
+        .footer {
+            position: absolute;
+            top: 450px;
+            background-color: #D3D3D3;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .container p {
+            height: 100%;
+
+        }
+        .side2 {
+            
+            background-color: #CCFFCC;
+            display: inline-block;
+            width: 20%;
+            position: absolute;
+            left: 0;
+            top: 130px;
+            height: 220px;
+         }
+         .sides {
+            float: left;
+         }
+
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="header">
+            <h1>logotype</h1>
+            <ul>
+                <li><a href="m1">m1</a></li>
+                <li><a href="m2">m2</a></li>
+                <li><a href="m3">m3</a></li>
+                <li><a href="m4">m4</a></li>
+            </ul>       
+        </div>
+        <div class="sides">
+            <div class="side">
+                <ul>
+                    <li><a href="s1">s1</a></li>
+                    <li><a href="s2">s2</a></li>
+                    <li><a href="s3">s3</a></li>
+                    <li><a href="s4">s4</a></li>
+                </ul> 
+            </div>
+            <div class="side2">
+                test
+            </div>
+        </div>
+        <div class="container">
+            <p>내용<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+                헤더를 상단에 고정<br>
+            </p>
+        </div>
+        <div class="footer">copylight</div>
+    </div>
+</body>
+</html>

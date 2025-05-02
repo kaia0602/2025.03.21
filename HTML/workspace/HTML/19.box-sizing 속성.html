@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing 속성</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* HTML 화면 작성시의 초기화 */
+        div {
+            width: 400px;
+            height: 100px;
+            border: 20px solid black;
+            padding: 20px;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        div {
+            box-shadow: 7px 8px 3px 0px red;
+            ;
+            /* 가소 세로 흐림 번짐 색상 inset */
+        }
+
+        /* border-box: 외곽선을 포함하여 width, height가 설정됨 */
+        /* content-box: 콘텐츠 영역만 width, height가 설정됨 */
+        .multishadow {
+            border: 1px solid black;
+            box-shadow: 5px 5px red, 10px 10px yellow, 15px 15px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border-box">border-box</div>
+    <br>
+    <div class="content-box">content-box</div>
+
+    <div class="multishadow">multishadow</div>
+</body>
+
+</html>

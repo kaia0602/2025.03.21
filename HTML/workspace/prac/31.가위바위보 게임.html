@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+           
+            background-color: #f8f9fb;
+        }
+        #wrap {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .centerarea {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>
+            <img src="../images/가위.png" alt="user" id="user">
+            <p>가위</p>
+        </div>
+        <div class="centerarea">
+            <h3>이겼습니다</h3>
+            <p>vs</p>
+            <div>
+                <button data-user="가위">✌</button>
+                <button data-user="바위">✊</button>
+                <button data-user="보">🖐</button>
+            </div>
+        </div>
+        <div>
+            <img src="../images/바위.png" alt="computer" id="computer">
+            <p>바위</p>
+        </div>
+    </div>
+
+    <script>
+        //버튼을 눌렀을때 왼쪽의 이미지가 버튼에 맞게 변하도록
+        const userChoice = document.querySelectorAll('button');
+        const computerChoise = document.querySelector('#computer img')
+
+
+  
+        
+        // 컴퓨터가 랜덤으로 가위바위보중 하나를 설정하도록
+        
+        //사람과 컴퓨터의 값을 비교하여 승패를 설정하도록
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 관련 스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Poor+Story&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "맑은 고딕", 돋움, 굴림;
+        }
+        /* font-family: 글꼴 설정 */
+        h1 {
+            font-size: 40px;
+        }
+        /* font-size: 글자 크기 설정 */
+        /* 아무것도 설정하지 않은 글자는 16px */
+        /* %: 부모의 크기를 기준으로 설정되는 크기 */
+        /* em: 부모의 크기를 1로하고 그에대한 숫자로 표기 */
+        /* rem: html의 크기를 1로하고 그에대한 숫자로 표기 */
+        /* 글자로 설정: xx-small, x-small. small. medium, large, x-large, xx-large  */
+        p {
+            font-size: 20px;
+            font-family: 'NanumBruchScript';
+        }
+        .p2 {
+            font-style: italic;
+            /* 기울어진 글꼴을 사용 */
+            /* oblique: 정상글꼴을 기울어지게 표현 */
+            /* normal: 기본값 */
+            font-family: 'Poor Story';
+
+        }
+        .p3 {
+            font-weight: bold;
+            /* font-weight: 글자 굵기 설정 */
+            /* normal, bold, bolder, lighter, 100, 200, 300...900 */
+        }
+        @font-face {
+            font-family: 'NanumBruchScript';
+            src: url('../NanumBrushScript-Regular.ttf')format('truetype');
+        }
+        .poor-story-regular {
+         font-family: "Poor Story", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Poor+Story&display=swap');
+    </style>
+</head>
+<body>
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <p class="p2">레드향은 한라봉과 귤을 교배한 것으로</p>
+    <p class="p3">일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+</body>
+</html>

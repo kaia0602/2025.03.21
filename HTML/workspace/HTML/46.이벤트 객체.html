@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventOj</title>
+</head>
+<body>
+    <a href="http://www.naver.com">naver</a>
+    <p>text1</p>
+    <p>text2</p>
+    <p>text3</p>
+    <br><br><br><br><br><br><br><br>
+    <button id="btn1">kaia</button>
+    <script>
+        const pEls = document.querySelectorAll('p');
+        // 배열.forEach((배열의 첫번째 값부터 반복되는 값의 변수))
+        pEls.forEach((ptag) =>{
+            ptag.addEventListener('click', function(){
+                if (this.style.color === 'red'){
+                    this.style.color = 'black';
+                    // this의 경우 화살표 함수를 쓰면 작동이 안됨
+                }else{
+                    this.style.color = 'red';
+                }
+            });
+        })
+        // event.preventDefault(): 태그에 있는 이벤트를 취소하는 메서드
+        document.querySelector('a').addEventListener('click', ()=>{
+            console.log('a 태그 네이버로 이동하지 않음');
+            event.preventDefault();
+            const atag = document.querySelector('a');
+            window.location.href = "http://www.youtube.com"
+            // a태그의 네이버로 이동하지 않고 유투브로 이동하도록 설정
+        })
+
+        document.querySelector('#btn1').addEventListener('click',(event)=>{
+            console.log(event);
+            console.log(event.clientX);
+            console.log(event.clientY);
+            console.log(event.pageX);
+            console.log(event.pageY);
+            console.log(event.screenX);
+            console.log(event.screenY);
+            console.log(event.target); // event.target: 현재 클릭한 태그를 출력
+            // this: 이벤트가 실행된 태그
+
+            console.log(event.this);
+        
+        })
+    </script>
+</body>
+</html>

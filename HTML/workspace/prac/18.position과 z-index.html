@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position과 z-index</title>
+</head>
+<style>
+body {
+    background-image: url(../images/bg_grid.gif);
+    width: 900px;
+    height: 400px;
+}
+.bg {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+.box {
+    width: 250px;
+    height: 100px
+    
+}
+
+.redBox {
+    background-color: red;
+    z-index: 2;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+.greenBox {
+    background-color: greenyellow;
+    position: relative;
+    left: 80px;
+    bottom: 60px;
+    z-index: 3;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+.blueBox {
+    background-color: dodgerblue;
+    position: relative;
+    bottom: 80px;
+    left: 110px;
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 1px;
+}
+p {
+    font-weight: bolder;
+}
+</style>
+<body>
+    <div class="bg">
+        <div class="bgBox"></div>
+        <div class="box redBox">
+            <p>박스의 크기와 위치를 잘 살펴<br>
+            보아야 합니다.</p>
+        </div>
+        <div class="box greenBox">
+            <p>박스의 포지션 속성을 바꿔 가며<br>
+            테스트해 보아야 합니다.</p>
+        </div>
+        <div class="box blueBox">
+            <p>포지션을 이해하기 위해서는 시<br>
+            험해 보고 관찰해 보는 것이 절<br>
+            대적으로 필요합니다.</p>
+        </div>
+    </div>
+</body>
+</html>

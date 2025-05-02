@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moving menu</title>
+    <style>
+        ul,
+        li {
+            list-style: none;
+            list-style-position: inside;
+        }
+
+        .box {
+            transition-property: width, color;
+            transition-duration: 3s;
+            /* animation-duration: 3s; */
+        }
+
+        .box:hover {
+            width: 500px;
+            color: red;
+        }
+
+        li {
+            background-color: #AABBCC;
+            margin-bottom: 5px;
+            padding: 8px;
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Moving menu</h1>
+    <div class="wrap">
+        <ul>
+            <li class="box">Company</li>
+            <li class="box">Product</li>
+            <li class="box">Service</li>
+            <li class="box">Customer Support</li>
+            <li class="box">Community</li>
+        </ul>
+    </div>
+</body>
+</html>

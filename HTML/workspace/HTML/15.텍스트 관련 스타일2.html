@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 관련 속성2</title>
+    <style>
+        .p1 {text-align: start;}
+        .p2 {text-align: center;}
+        .p3 {text-align: justify;}
+        .p4 {text-align: end;}
+        /* start와 left의 차이점: start는 언어별로 정렬하는 방향이 달라짐 */
+        .p1 {line-height: 10px;}
+        .p2 {line-height: 20px;}
+        .p3 {line-height: 2.0;}
+        /* 글자크기를 기준으로 줄 간격을 설정
+        글자 크기가 16px라면 줄 간격이 2.0일 때는 32px */
+        .p4 {line-height: 200%;}
+        /* line-height: 줄 높이 설정 */
+        .heading {
+            width: 500px;
+            height: 100px;
+            line-height: 100px;
+            /* 글자를 세로 중앙으로 설정하는 방법은
+            height, line-height(줄간격)의 값을 동일하게 설정 */
+            background-color: #222;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+        .underline {text-decoration: underline;}
+        .overline {text-decoration: overline;}
+        .line-throws {text-decoration: line-through;}
+        /* text-decoration: 글자에 윗줄, 밑줄, 취소선을 그려주는 설정 */
+        .aTag {color: black;
+                text-decoration: none;}
+        .aTag:hover {text-decoration: underline;
+                    color: gray;
+                    font-weight: bold;
+                }
+                /* 선택자: hover - 마우스를 올렸을때 설정한 CSS가 실행됨 */
+        .shadow1 {color: red; text-shadow: 2px 2px black;}
+        .shadow2 {text-shadow: 5px 5px 3px #ffa500;}
+        .shadow3 {color: #fff; text-shadow: 7px -7px 20px #000;}
+        /* text-shadow: 글자에 그림자를 만드는 설정 
+            - 가로거리, 세로거리, 번짐정도, 색상;*/
+        .trans1 {text-transform: capitalize;}
+        .trans2 {text-transform: uppercase;}
+        .trans3 {text-transform: lowercase;}
+        /* text-transform: 영어의 대소문자를 변경하는 설정 */
+        /* capitalize: 첫글자만 대문자로 변경*/
+        /* uppercase: 모두 대문자로 변경 */
+        /* lowercase: 모누 소문자로 변경 */
+        .spacing1 {letter-spacing: 10px;}
+        .spacing2 {letter-spacing: 20px;}
+        .spacing3 {word-spacing: 10px;}
+        .spacing4 {word-spacing: 50px;} 
+    </style>
+</head>
+<body>
+    <p class="spacing1">CSS</p>
+    <p class="spacing2">CSS</p>
+    <p class="spacing3">Java Script</p>
+    <p class="spacing4">Jave Script</p>
+
+    <p>none</p>
+    <p class="underline shadow1 trans1">undErLine</p>
+    <p class="overline shadow2 trans2">ovErlIne</p>
+    <p class="line-throws shadow3 trans3">liNe-tHRows</p>
+    <a href="#" class="aTag">aTag</a>
+
+    <p class="p1">껍질에 붉은 빛이 돌아 레드향이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과욱이 통통하다.</p>
+    <p class="p2">껍질에 붉은 빛이 돌아 레드향이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과욱이 통통하다.</p>
+    <p class="p3">껍질에 붉은 빛이 돌아 레드향이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과욱이 통통하다.</p>
+    <p class="p4">껍질에 붉은 빛이 돌아 레드향이라 불린다. 레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과욱이 통통하다.</p>
+    <p class="heading">HTML</p>
+</body>
+</html>

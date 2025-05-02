@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 관련태그</title>
+    <style>
+        table, th, td{
+            border: 1px solid gainsboro;
+        }
+        th, td{
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>선물용과 가정용 상품 구성</caption>
+        <!-- colgroup 태그 : 열을 묶어주는 태그, caption 태그 뒤에 사용 -->
+        <colgroup>
+            <col style="background-color: #eee;">
+            <col>
+            <col style="width: 150px;">
+            <col style="width: 150px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- rowsapn : 세로 줄 병합 -->
+                <td rowspan="2">선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+            <tr>
+                <td rowspan="2">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>47,000원</td>
+            </tr>
+        </tbody>
+    </table>
+</html>
+    <table>
+        <caption>2025.03</caption>
+        <colgroup>
+            <col style="background-color: red;">
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- colspan : 가로 줄 병합 -->
+                <td colspan="6"></td>    
+                <td>1<br>삼일절</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3<br>대체 휴일<br>납세자의 날</td>
+                <td>4</td>
+                <td>5<br>경첩</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8<br>국제 여성의 날<br>3.8 민주의거</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14<br>화이트데이</td>
+                <td>15<br>315의거기념일</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19<br>상공의 날</td>
+                <td>20<br>춘분<br>국제 행복의 날</td>
+                <td>21<br>암예방의 날</td>
+                <td>22<br>어스아워<br>세계 물의 날</td>
+            </tr>
+            <tr>
+                <td>23<br>국제 강아지의 날</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28<br>서해수호의 날</td>
+                <td>29</td>
+            </tr>
+                <tr>
+                <td>30</td>
+                <td>31</td>
+                <td colspan="5"></td>
+
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>
+            수습 국원 지원 양식
+        </caption>
+        <tr>
+            <td rowspan="3">개인정보</td>
+            <td>이름</td>
+            <td></td>
+        </tr>
+            <td>학과/학번</td>
+            <td></td>
+        <tr>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>지원분야</td>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td colspan="6">한국의 차</td>
+        </tr>
+        <tr>
+            <td rowspan="6">뿌리차</td>
+            <td>인삼차</td>
+            <td rowspan="9">과일차</td>
+            <td>수정과</td>
+            <td rowspan="5">잎차</td>
+            <td>뽕잎차</td>
+        </tr>
+        <tr>
+            <td>당귀차</td>
+            <td>유자차</td>
+            <td>감잎차</td>
+        </tr>
+        <tr>
+            <td>생강차</td>
+            <td>구기자차</td>
+            <td>솔잎차</td>
+        </tr>
+        <tr>
+            <td>칡차</td>
+            <td>대추차</td>
+            <td>국화차</td>
+        </tr>
+        <tr>
+            <td>둥굴레차</td>
+            <td>오미자차</td>
+            <td>이슬차</td>
+        </tr>
+        <tr>
+            <td>마차</td>
+            <td>매실차</td>
+            <td rowspan="4">기타</td>
+            <td>두둥차</td>
+        </tr>
+        <tr>
+            <td rowspan="3">보리차</td>
+            <td>모과차</td>
+            <td>영지버섯차</td>
+            <tr>
+                <td>옥수수차</td>
+                <td>산수유차</td>
+                <td>귤강차</td>
+            </tr>
+            <tr>
+                <td>현미차</td>
+                <td>탕자차</td>
+                <td>쌍황차</td>
+            </tr>
+        </tr>
+    </table>
+</body>
+</html>
+

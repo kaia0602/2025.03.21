@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 아름다운 정원</title>
+    <style>
+        span {
+            font-weight: bolder;
+        }
+        
+        .box {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            height: 320px;
+            /* margin: 50px; */
+            /* text-align: center; */
+        }
+
+        h3 {
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .box1 h3{ background-color: #DDAAAA; height: 35px;}
+        .box2 h3{ background-color: #AABBCC; height: 35px;}
+        .box3 h3{ background-color: #EEBBAA; height: 35px;}
+        .box4 h3{ background-color: #AAAA77; height: 35px;}
+        .box p {
+            text-align: justify;
+            margin-top: 35px;
+        }
+        .clear::after
+        { content:""; display: block; clear: both;}
+    </style>
+</head>
+<body>
+    <h1>나의 아름다운 정원</h1>
+    <p>사람들이 선호하는 꽃들은 어떤 것들일까.. <br>
+    아마 스스로에게 <span>자신감을 북돋워 주는 </span>표정 있는 꽃들일 것이다</p>
+       <div class="clear">
+            <div class=" box box1" >
+                <h3>튜울립</h3>
+                <p style="padding: 10px;">너무 화려하지 않으며 고귀한 느낌을 가지고 있다. 붉은 색이
+                    단연 으뜸이지며 한 송이만 있어도 빼어나다
+                </p>
+            </div>
+            <div class="box box2">
+                <h3>제비꽃</h3>
+                <p style="padding: 10px;">드물게 푸른색을 띠고 있으며 작지만 시원해 보이는 어린 꽃이라고 할 수 있다.
+                    여럿이 함께 있을 때 더욱 아름답다
+                </p>
+            </div>
+            <div class="box box3" style="bottom: 20px;">
+                <h3>호박꽃</h3>
+                <p style="padding: 10px;">색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로 매우 완숙한 이미지를 
+                    풍기는 꽃이다
+                </p>
+            </div>
+            <div class="box box4" style="bottom: 20px;">
+                <h3>해바라기</h3>
+                <p style="padding: 10px;">태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에 속하며 송이가 적어야 제격이다</p>
+            </div>
+        </div>
+        <div>
+            <p style="border: 1px solid red; background-color: #AAAA77; float: right;" >
+                test
+            </p>
+        </div>
+</body>
+</html>
