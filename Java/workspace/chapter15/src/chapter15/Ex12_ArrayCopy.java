@@ -1,6 +1,5 @@
 package chapter15;
 
-import java.io.ByteArrayInputStream;
 import java.util.Arrays;
 
 public class Ex12_ArrayCopy {

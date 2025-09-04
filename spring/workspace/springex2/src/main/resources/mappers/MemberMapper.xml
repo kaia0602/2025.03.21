@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.zerock.springex2.mapper.MemberMapper">
+    <insert id="insertMember">
+        INSERT INTO tbl_member (id, pw, email1, email2)
+        VALUES (#{id}, #{pw}, #{email1}, #{email2});
+    </insert>
+
+    <select id="selectLogin" resultType="org.zerock.springex2.vo.MemberVO">
+        SELECT * FROM tbl_member WHERE id=#{id} and pw=#{pw}
+    </select>
+
+    <delete id="deleteMember">
+        DELETE FROM tbl_member WHERE id=#{id}
+    </delete>
+
+    <select id="selectMember" resultType="org.zerock.springex2.vo.MemberVO">
+        SELECT * FROM tbl_member WHERE id=#{id}
+    </select>
+</mapper>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace에 현재 연결할 인터페이스의 패키지 명부터 인터페이스 명까지 전체를 작성 -->
+<mapper namespace="org.zerock.springex2.mapper.TimeMapper2">
+    <!-- id에 인터페이스의 추상메서드와 같은 이름을 사용해야 연동이됨 -->
+    <select id="getTime" resultType="string"> <!-- result에는 실행결과의 타입을 설정 -->
+        select now()
+    </select>
+</mapper>

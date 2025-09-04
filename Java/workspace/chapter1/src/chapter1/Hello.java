@@ -12,7 +12,29 @@ public class Hello {
 		System.out.println("Hello world");
 		System.out.println("kaia");
 		//syso를 입력 후 crtl + space를 입력하면 자동완성
-		
+
+		// int[] arr =  {47,95,64,21,66};
+		// int temp;
+		// for(int i = 0; i < 5; i++) {
+		// 	for(int j=0; j<i; j++) {
+		// 		if(arr[i] < arr[j]) {
+		// 			temp = arr[i];
+		// 			arr[i] = arr[j];
+		// 			arr[j] = temp;
+		// 		}
+		// 	}
+		for(int i=5; x<=7; x++) {
+			for(int j=2; j<=4; j++) {}
+		}
+		System.out.println(i*j);
 	}
 
-}
+	
+
+	
+
+		
+		
+	
+
+	}
